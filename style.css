@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b0e14;
+    color: #e2e8f0;
+    overflow-x: hidden;
+}
+
+/* Efeito de transição de Slides de cima a baixo */
+.slide {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 4rem 1.5rem;
+}
+
+/* Menu Flutuante */
+.nav-menu {
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    z-index: 100;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-menu a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section (Céu Estrelado) */
+#hero {
+    overflow: hidden;
+}
+
+#stars-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    pointer-events: none; /* Deixa o mouse passar para o canvas */
+}
+
+.hero-content a, .hero-content span {
+    pointer-events: auto; /* Reativa clique nos botões */
+}
+
+.glow-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #94a3b8;
+    margin: 1rem 0;
+}
+
+.tip {
+    display: block;
+    font-size: 0.85rem;
+    color: #38bdf8;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+/* Botões */
+.btn-primary {
+    background: linear-gradient(135deg, #0284c7, #38bdf8);
+    color: #fff;
+    padding: 0.9rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
+
+/* Cartões com Efeito Glass (Vidro Fosco) */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.5rem;
+    max-width: 900px;
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid #38bdf8;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Grid de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.badge {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+}
+
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.btn-sm {
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-demo { background: #0284c7; color: white; }
+.btn-git { background: #334155; color: white; }
+.btn-down { background: #1e293b; color: #94a3b8; border: 1px solid #475569; }
+
+/* Contatos */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.contact-btn:hover { transform: scale(1.05); }
+.whatsapp { background: #16a34a; }
+.linkedin { background: #0284c7; }
+.github { background: #24292f; }
+.cv { background: #ea580c; }
+
+.text-center { text-align: center; }
+
+@media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .nav-menu { display: none; }
+    .glow-text { font-size: 2rem; }
+}
