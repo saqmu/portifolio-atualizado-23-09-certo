@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel | Desenvolvedor de Sistemas & Soluções</title>
+    <!-- Fonte moderna do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Fixo para Navegar entre os Slides -->
+    <nav class="nav-menu">
+        <a href="#hero">Início</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- SLIDE 1: O Céu Estrelado Interativo -->
+    <section id="hero" class="slide">
+        <canvas id="stars-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="glow-text">Olá, eu sou o Samuel</h1>
+            <p>Desenvolvedor de Sistemas & Soluções em TI</p>
+            <span class="tip">Passe o mouse pelo céu para ver a mágica ✨</span>
+            <a href="#sobre" class="btn-primary">Conhecer Minha Trajetória ↓</a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: Quem sou eu & Experiências -->
+    <section id="sobre" class="slide">
+        <div class="container glass-card">
+            <h2>Sobre Mim & Minha História</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Quem sou eu?</h3>
+                    <p>Tenho 18 anos, moro em Campo Grande - MS e sou apaixonado por resolver problemas reais de empresas através da tecnologia.</p>
+                    <p>Atualmente curso no <strong>SENAI</strong> e desenvolvo sistemas web, automações e bancos de dados.</p>
+                    
+                    <h3 style="margin-top: 1.5rem;">Meu Diferencial</h3>
+                    <p>Foco prático em <strong>reduzir custos e automatizar tarefas manuais</strong> para negócios, unindo lógica ágil, inteligência artificial e boas práticas de código.</p>
+                </div>
+                <div>
+                    <h3>Experiência & Formação</h3>
+                    <div class="timeline-item">
+                        <strong>Águas Guariroba</strong>
+                        <p>Criação e estruturação do Sistema de Almoxarifado digital com GitHub e planilhas automatizadas.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <strong>SENAI MS</strong>
+                        <p>Formação técnica, eletrônica, análise de dados e maratonas de desenvolvimento (Grand Prix).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: Projetos Interativos -->
+    <section id="projetos" class="slide">
+        <div class="container">
+            <h2>Meus Projetos & Sistemas</h2>
+            <p class="subtitle">Sistemas funcionais criados para resolver problemas reais. Clique para testar ou ver o código.</p>
+            
+            <div class="projects-grid">
+                
+                <!-- CARD DO PROJETO 1: Almoxarifado -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>📦 Sistema de Almoxarifado V2</h3>
+                        <span class="badge">Gestão / Web</span>
+                    </div>
+                    <p>Controle de estoque inteligente com aviso de nível mínimo, histórico de retiradas e dashboard visual.</p>
+                    
+                    <!-- Botões de Ação -->
+                    <div class="project-buttons">
+                        <!-- Link do seu projeto no ar (Vercel ou Demo) -->
+                        <a href="https://github.com" target="_blank" class="btn-sm btn-demo">▶ Testar Demo</a>
+                        <!-- Link do seu repositório no GitHub -->
+                        <a href="https://github.com" target="_blank" class="btn-sm btn-git">GitHub</a>
+                        <!-- Link para Baixar o ZIP direto do GitHub -->
+                        <a href="https://github.com" target="_blank" class="btn-sm btn-down">⬇ Baixar Código</a>
+                    </div>
+                </div>
+
+                <!-- CARD DO PROJETO 2: Catálogo WhatsApp -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>💬 Cardápio / Pedidos via WhatsApp</h3>
+                        <span class="badge">Automação</span>
+                    </div>
+                    <p>Aplicativo web onde o cliente monta o pedido e manda direto pro WhatsApp do comerciante sem taxas.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com" target="_blank" class="btn-sm btn-demo">▶ Testar Demo</a>
+                        <a href="https://github.com" target="_blank" class="btn-sm btn-git">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: Contato & Currículo -->
+    <section id="contato" class="slide">
+        <div class="container glass-card text-center">
+            <h2>Vamos Conversar?</h2>
+            <p>Estou disponível para <strong>estágio matutino em TI</strong> e desenvolvimento de projetos sob medida.</p>
+            
+            <div class="contact-links">
+                <!-- Coloque seus links reais aqui -->
+                <a href="https://wa.me/5567999999999" target="_blank" class="contact-btn whatsapp">📱 WhatsApp Direto</a>
+                <a href="https://linkedin.com" target="_blank" class="contact-btn linkedin">💼 LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="contact-btn github">🐙 GitHub Profile</a>
+                <!-- Link do seu PDF de currículo -->
+                <a href="#" download class="contact-btn cv">📄 Baixar Currículo (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
